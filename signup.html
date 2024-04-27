@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container mx-auto">
+    <div class="mt-10 flex justify-center w-full">
+      <img src="./img/logo.png" alt="" />
+    </div>
+    <p class="text-primary font-bold text-center text-3xl mt-10 uppercase">
+      Signup
+    </p>
+
+    <div class="px-5 mt-10 flex flex-col gap-y-4">
+      <input
+        type="text"
+        placeholder="Name"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+      <input
+        type="text"
+        placeholder="Email"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+      <input
+        type="tel"
+        placeholder="Phone Number"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+      <div
+        class="flex items-center w-full overflow-hidden border-primary border rounded-lg"
+      >
+        <input
+          type="password"
+          placeholder="Password"
+          class="input bg-primary-light flex-grow rounded-none placeholder:text-primary-placeholder"
+        />
+        <button
+          class="border btn bg-primary-light rounded-none border-transparent text-primary password-toggler"
+        >
+          <i class="bi bi-eye"></i>
+        </button>
+      </div>
+      <div
+        class="flex items-center w-full overflow-hidden border-primary border rounded-lg"
+      >
+        <input
+          type="password"
+          placeholder="Confirm Password"
+          class="input bg-primary-light flex-grow rounded-none placeholder:text-primary-placeholder"
+        />
+        <button
+          class="border btn bg-primary-light rounded-none border-transparent text-primary password-toggler"
+        >
+          <i class="bi bi-eye"></i>
+        </button>
+      </div>
+      <input
+        type="text"
+        placeholder="Refer Code"
+        class="input input-primary w-[60%] mx-auto text-center placeholder:text-primary-placeholder"
+      />
+    </div>
+
+    <div class="px-5">
+      <button class="btn btn-primary w-full text-white mt-10">Sign Up</button>
+    </div>
+    <p class="text-center text-primary mt-10 font-medium">Or continue with</p>
+
+    <div class="w-[60%] mx-auto flex justify-between mt-10">
+      <button class="btn btn-ghost text-primary text-3xl">
+        <i class="bi bi-google"></i>
+      </button>
+      <button class="btn btn-ghost text-primary text-3xl">
+        <i class="bi bi-facebook"></i>
+      </button>
+      <button class="btn btn-ghost text-primary text-3xl">
+        <i class="bi bi-apple"></i>
+      </button>
+    </div>
+    <p class="text-center mt-16 mb-10">
+      Already have an account?
+      <a href="./login.html" class="text-primary font-semibold">Login</a>
+    </p>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container mx-auto px-5">
+    <div class="bg-primary-light p-5 rounded-lg mt-10">
+      <p class="text-3xl font-bold text-primary">Payment</p>
+      <div class="flex justify-between mt-5 text-xl">
+        <p>Total Fee</p>
+        <p>185</p>
+      </div>
+    </div>
+
+    <p class="mt-16 text-lg">Select Payment Method</p>
+    <div class="mt-5 flex flex-col gap-y-5">
+      <div class="shadow-lg p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="bkash"
+          checked
+        />
+        <label for="bkash" class="flex gap-x-5">
+          <img src="./img/bkash.png" class="w-10 h-fit" alt="" />
+          <p class="text-lg">Bkash</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="nagad"
+        />
+        <label for="nagad" class="flex gap-x-5">
+          <img src="./img/nagad.png" class="w-10 h-fit" alt="" />
+          <p class="text-lg">Nagad</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="paytm"
+        />
+        <label for="paytm" class="flex gap-x-5">
+          <img src="./img/paytm.png" class="w-10 h-fit" alt="" />
+          <p class="text-lg">Paytm</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="google"
+        />
+        <label for="google" class="flex gap-x-5">
+          <img src="./img/google-pay.png" class="w-10 h-fit" alt="" />
+          <p class="text-lg">Google Pay</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="paypal"
+        />
+        <label for="paypal" class="flex gap-x-5">
+          <img src="./img/paypal.png" class="w-10 h-fit" alt="" />
+          <p class="text-lg">Paypal</p>
+        </label>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>
