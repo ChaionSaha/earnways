@@ -9,4 +9,9 @@
 *::before,
 *::after {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.container {
+  @apply mx-auto;
 }

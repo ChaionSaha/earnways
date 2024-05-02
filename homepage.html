@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+
+  <style>
+    ::-webkit-scrollbar {
+      width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+      background-color: black;
+    }
+
+    .icon-img-animation {
+      animation: upDown;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 1500ms;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+    }
+
+    @keyframes upDown {
+      0% {
+        transform: translateY(0%);
+      }
+
+      100% {
+        transform: translateY(-10%);
+      }
+    }
+  </style>
+
+  <body>
+    <!-- navbar -->
+    <div class="bg-white sticky top-0 left-0 z-[100]">
+      <div class="container flex items-center justify-between pt-7 pb-3">
+        <img src="./img/logo.png" class="w-20" alt="" />
+        <ul class="flex gap-x-10 font-semibold">
+          <li><a href="#" class="hover:text-primary">Home</a></li>
+          <li><a href="#services" class="hover:text-primary">Services</a></li>
+          <li><a href="#" class="hover:text-primary">Another Section</a></li>
+        </ul>
+        <div class="flex gap-x-5">
+          <button
+            class="btn btn-primary btn-outline rounded-full border-gray-200 text-xl"
+          >
+            <i class="bi bi-person"></i>
+          </button>
+          <button
+            class="btn btn-primary rounded-full text-white font-medium hover:bg-black duration-150"
+          >
+            Download App
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero section -->
+    <div class="relative h-[110vh]">
+      <img
+        src="./img/bg-2.png"
+        class="absolute h-[70%] left-0 bottom-0"
+        alt=""
+      />
+      <img
+        src="./img/bg-3.png"
+        class="absolute h-[70%] right-0 bottom-0"
+        alt=""
+      />
+      <div class="container pt-28">
+        <p
+          class="w-[70%] mx-auto leading-tight text-center font-semibold text-[90px]"
+        >
+          Everything for your <span class="text-primary">home</span>, & Future.
+        </p>
+        <p class="text-center text-[24px] mt-10">
+          Instant everything. Incredible prices. Big heart.
+        </p>
+        <p class="text-primary text-center mt-44">
+          <i class="bi bi-check2"></i> An UK insurer approved by the UICO.
+        </p>
+      </div>
+    </div>
+
+    <!-- section 1 -->
+    <div class="grid grid-cols-3 gap-10 container mt-20">
+      <div
+        class="p-10 bg-[rgb(255,254,231)] hover:bg-transparent border border-transparent hover:border-primary duration-300 rounded-xl"
+      >
+        <p class="w-[60%] text-3xl font-medium">Regulated by WICO</p>
+        <p class="pt-3 text-gray-400 text-lg">100% Reliable</p>
+        <img
+          src="./img/icon-image-1.png"
+          class="mt-5 ms-auto icon-img-animation"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="p-10 bg-[rgb(251,241,255)] hover:bg-transparent border border-transparent hover:border-primary duration-300 rounded-xl"
+      >
+        <p class="w-[90%] text-3xl font-medium">Get Instant Support All Day.</p>
+        <p class="pt-3 text-gray-400 text-lg">Claim Support</p>
+        <img
+          src="./img/icon-image-2.png"
+          class="mt-5 ms-auto icon-img-animation"
+          alt=""
+        />
+      </div>
+
+      <div
+        class="p-10 bg-[rgb(238,251,250)] hover:bg-transparent border border-transparent hover:border-primary duration-300 rounded-xl"
+      >
+        <p class="w-[90%] text-3xl font-medium">
+          Unbiased advice from experts.
+        </p>
+        <p class="pt-3 text-gray-400 text-lg">Consultation</p>
+        <img
+          src="./img/icon-image-3.png"
+          class="mt-5 ms-auto icon-img-animation"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- services section -->
+    <div class="container my-36" id="services">
+      <div class="flex justify-between">
+        <p class="w-[40%] text-5xl font-medium">Discover all our Services.</p>
+        <button class="btn btn-primary text-white font-medium">
+          View All Services
+        </button>
+      </div>
+      <div class="mt-16 grid grid-cols-4 gap-10">
+        <div
+          class="flex border gap-y-3 hover:border-primary duration-300 overflow-hidden relative group py-24 border-gray-300 rounded-lg flex-col justify-center items-center"
+        >
+          <img src="./img/icon-img-4.png" alt="" />
+          <p class="text-gray-400 text-lg">I want</p>
+          <p class="text-2xl font-medium">Home Loan</p>
+          <button
+            class="absolute bottom-0 right-0 p-3 group-hover:bg-primary group-hover:text-white duration-300 rounded-ss-full"
+          >
+            <i class="bi bi-arrow-right text-3xl"></i>
+          </button>
+        </div>
+
+        <div
+          class="flex border gap-y-3 hover:border-primary duration-300 overflow-hidden relative group py-24 border-gray-300 rounded-lg flex-col justify-center items-center"
+        >
+          <img src="./img/icon-img-5.png" alt="" />
+          <p class="text-gray-400 text-lg">I want</p>
+          <p class="text-2xl font-medium">Travel Insurance</p>
+          <button
+            class="absolute bottom-0 right-0 p-3 group-hover:bg-primary group-hover:text-white duration-300 rounded-ss-full"
+          >
+            <i class="bi bi-arrow-right text-3xl"></i>
+          </button>
+        </div>
+
+        <div
+          class="flex border gap-y-3 hover:border-primary duration-300 overflow-hidden relative group py-24 border-gray-300 rounded-lg flex-col justify-center items-center"
+        >
+          <img src="./img/icon-img-6.png" alt="" />
+          <p class="text-gray-400 text-lg">I want</p>
+          <p class="text-2xl font-medium">Insure the Car</p>
+          <button
+            class="absolute bottom-0 right-0 p-3 group-hover:bg-primary group-hover:text-white duration-300 rounded-ss-full"
+          >
+            <i class="bi bi-arrow-right text-3xl"></i>
+          </button>
+        </div>
+        <div
+          class="flex border gap-y-3 hover:border-primary duration-300 overflow-hidden relative group py-16 border-gray-300 rounded-lg flex-col justify-center items-center"
+        >
+          <img src="./img/icon-img-7.png" alt="" />
+          <p class="text-gray-400 text-lg">I want</p>
+          <p class="text-2xl font-medium">Health Insurance</p>
+          <button
+            class="absolute bottom-0 right-0 p-3 group-hover:bg-primary group-hover:text-white duration-300 rounded-ss-full"
+          >
+            <i class="bi bi-arrow-right text-3xl"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- why choose us section -->
+    <div class="container grid grid-cols-2 gap-x-36 mb-36">
+      <div class="">
+        <div class="flex gap-x-10 justify-between">
+          <img src="./img/icon-img-8.png" class="h-fit self-end ps-10" alt="" />
+          <div
+            class="bg-[#FFF3C9] w-[55%] p-10 border rounded-[45px_0_45px_0] border-[#ffae10]"
+          >
+            <p class="text-[#ffae10] text-4xl">10 Million+</p>
+            <p class="text-lg">Customers trust us & have bought insurance</p>
+          </div>
+        </div>
+        <div class="flex gap-x-10 mt-10">
+          <div
+            class="bg-[#ECDEFE] border w-[60%] border-[#9550ef] p-10 rounded-[45px_0_45px_0]"
+          >
+            <p class="flex flex-col text-[#9550ef] text-4xl">
+              50+
+              <span>Insurance</span>
+            </p>
+            <p class="text-lg mt-5">
+              Partnered with us so that you can compare easily & transparently
+            </p>
+          </div>
+          <div class="w-[40%]">
+            <div
+              class="bg-[#CCF6FF] border border-[#00bde5] p-10 rounded-[0_45px_0_45px]"
+            >
+              <p class="text-[#00bde5] text-3xl">Claims</p>
+              <p>Get Support by expert easily</p>
+            </div>
+            <img src="./img/icon-img-9.png" class="w-fit h-fit" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <p class="uppercase text-gray-400 tracking-wider text-lg">
+          Why Choose Us
+        </p>
+        <p class="text-6xl font-medium">What Makes Us the Best.</p>
+        <div class="collapse collapse-arrow mt-10">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl flex gap-x-5 font-medium">
+            <i class="bi bi-handbag text-primary text-2xl"></i>
+            <p class="font-medium text-2xl">Lowest Price</p>
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl flex gap-x-5 font-medium">
+            <i class="bi bi-handbag text-primary text-2xl"></i>
+            <p class="font-medium text-2xl">Lowest Price</p>
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-arrow">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl flex gap-x-5 font-medium">
+            <i class="bi bi-handbag text-primary text-2xl"></i>
+            <p class="font-medium text-2xl">Lowest Price</p>
+          </div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
