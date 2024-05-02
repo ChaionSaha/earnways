@@ -40,10 +40,12 @@
     <div class="bg-white sticky top-0 left-0 z-[100]">
       <div class="container flex items-center justify-between pt-7 pb-3">
         <img src="./img/logo.png" class="w-20" alt="" />
-        <ul class="flex gap-x-10 font-semibold">
+        <ul class="gap-x-10 font-semibold hidden lg:flex">
           <li><a href="#" class="hover:text-primary">Home</a></li>
           <li><a href="#services" class="hover:text-primary">Services</a></li>
-          <li><a href="#" class="hover:text-primary">Another Section</a></li>
+          <li>
+            <a href="#feedback" class="hover:text-primary">Client Feedback</a>
+          </li>
         </ul>
         <div class="flex gap-x-5">
           <button
@@ -61,34 +63,34 @@
     </div>
 
     <!-- hero section -->
-    <div class="relative h-[110vh]">
+    <div class="relative lg:h-[110vh] h-[60vh]">
       <img
         src="./img/bg-2.png"
-        class="absolute h-[70%] left-0 bottom-0"
+        class="absolute lg:h-[70%] w-[40%] lg:w-fit left-0 bottom-0"
         alt=""
       />
       <img
         src="./img/bg-3.png"
-        class="absolute h-[70%] right-0 bottom-0"
+        class="absolute lg:h-[70%] w-[40%] lg:w-fit right-0 bottom-0"
         alt=""
       />
       <div class="container pt-28">
         <p
-          class="w-[70%] mx-auto leading-tight text-center font-semibold text-[90px]"
+          class="lg:w-[70%] mx-auto leading-tight text-center font-semibold text-4xl lg:text-[90px]"
         >
           Everything for your <span class="text-primary">home</span>, & Future.
         </p>
-        <p class="text-center text-[24px] mt-10">
+        <p class="text-center lg:text-2xl text-xl mt-10">
           Instant everything. Incredible prices. Big heart.
         </p>
-        <p class="text-primary text-center mt-44">
+        <p class="text-primary text-center mt-16 lg:mt-44">
           <i class="bi bi-check2"></i> An UK insurer approved by the UICO.
         </p>
       </div>
     </div>
 
     <!-- section 1 -->
-    <div class="grid grid-cols-3 gap-10 container mt-20">
+    <div class="grid lg:grid-cols-3 gap-10 container mt-20">
       <div
         class="p-10 bg-[rgb(255,254,231)] hover:bg-transparent border border-transparent hover:border-primary duration-300 rounded-xl"
       >
@@ -130,13 +132,15 @@
 
     <!-- services section -->
     <div class="container my-36" id="services">
-      <div class="flex justify-between">
-        <p class="w-[40%] text-5xl font-medium">Discover all our Services.</p>
-        <button class="btn btn-primary text-white font-medium">
+      <div class="flex flex-col lg:flex-row gap-y-5 justify-between">
+        <p class="lg:w-[40%] text-3xl lg:text-5xl font-medium">
+          Discover all our Services.
+        </p>
+        <button class="btn btn-primary text-white font-medium w-fit">
           View All Services
         </button>
       </div>
-      <div class="mt-16 grid grid-cols-4 gap-10">
+      <div class="mt-16 grid lg:grid-cols-4 gap-10">
         <div
           class="flex border gap-y-3 hover:border-primary duration-300 overflow-hidden relative group py-24 border-gray-300 rounded-lg flex-col justify-center items-center"
         >
@@ -191,22 +195,26 @@
     </div>
 
     <!-- why choose us section -->
-    <div class="container grid grid-cols-2 gap-x-36 mb-36">
+    <div class="container grid lg:grid-cols-2 gap-y-10 gap-x-36 mb-36">
       <div class="">
         <div class="flex gap-x-10 justify-between">
-          <img src="./img/icon-img-8.png" class="h-fit self-end ps-10" alt="" />
+          <img
+            src="./img/icon-img-8.png"
+            class="h-fit self-end ps-10 hidden lg:block"
+            alt=""
+          />
           <div
-            class="bg-[#FFF3C9] w-[55%] p-10 border rounded-[45px_0_45px_0] border-[#ffae10]"
+            class="bg-[#FFF3C9] lg:w-[55%] p-10 border rounded-[45px_0_45px_0] border-[#ffae10]"
           >
-            <p class="text-[#ffae10] text-4xl">10 Million+</p>
+            <p class="text-[#ffae10] text-2xl lg:text-4xl">10 Million+</p>
             <p class="text-lg">Customers trust us & have bought insurance</p>
           </div>
         </div>
-        <div class="flex gap-x-10 mt-10">
+        <div class="flex flex-col lg:flex-row gap-x-10 gap-y-10 mt-10">
           <div
-            class="bg-[#ECDEFE] border w-[60%] border-[#9550ef] p-10 rounded-[45px_0_45px_0]"
+            class="bg-[#ECDEFE] border lg:w-[60%] border-[#9550ef] p-10 rounded-[45px_0_45px_0]"
           >
-            <p class="flex flex-col text-[#9550ef] text-4xl">
+            <p class="flex flex-col text-[#9550ef] text-2xl lg:text-4xl">
               50+
               <span>Insurance</span>
             </p>
@@ -214,27 +222,31 @@
               Partnered with us so that you can compare easily & transparently
             </p>
           </div>
-          <div class="w-[40%]">
+          <div class="lg:w-[40%]">
             <div
               class="bg-[#CCF6FF] border border-[#00bde5] p-10 rounded-[0_45px_0_45px]"
             >
-              <p class="text-[#00bde5] text-3xl">Claims</p>
+              <p class="text-[#00bde5] text-xl lg:text-4xl">Claims</p>
               <p>Get Support by expert easily</p>
             </div>
-            <img src="./img/icon-img-9.png" class="w-fit h-fit" alt="" />
+            <img
+              src="./img/icon-img-9.png"
+              class="w-fit h-fit hidden lg:block"
+              alt=""
+            />
           </div>
         </div>
       </div>
       <div class="">
-        <p class="uppercase text-gray-400 tracking-wider text-lg">
+        <p class="uppercase text-gray-400 tracking-wider lg:text-lg">
           Why Choose Us
         </p>
-        <p class="text-6xl font-medium">What Makes Us the Best.</p>
+        <p class="lg:text-5xl text-3xl font-medium">What Makes Us the Best.</p>
         <div class="collapse collapse-arrow mt-10">
           <input type="radio" name="my-accordion-2" checked="checked" />
           <div class="collapse-title text-xl flex gap-x-5 font-medium">
             <i class="bi bi-handbag text-primary text-2xl"></i>
-            <p class="font-medium text-2xl">Lowest Price</p>
+            <p class="font-medium text-lg lg:text-2xl">Lowest Price</p>
           </div>
           <div class="collapse-content">
             <p>hello</p>
@@ -244,7 +256,7 @@
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl flex gap-x-5 font-medium">
             <i class="bi bi-handbag text-primary text-2xl"></i>
-            <p class="font-medium text-2xl">Lowest Price</p>
+            <p class="font-medium text-lg lg:text-2xl">Lowest Price</p>
           </div>
           <div class="collapse-content">
             <p>hello</p>
@@ -254,10 +266,341 @@
           <input type="radio" name="my-accordion-2" />
           <div class="collapse-title text-xl flex gap-x-5 font-medium">
             <i class="bi bi-handbag text-primary text-2xl"></i>
-            <p class="font-medium text-2xl">Lowest Price</p>
+            <p class="font-medium text-lg lg:text-2xl">Lowest Price</p>
           </div>
           <div class="collapse-content">
             <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- client feedback section -->
+    <div class="bg-[#f6f9fb] py-16" id="feedback">
+      <div class="container">
+        <p class="font-medium text-center text-3xl lg:text-5xl">
+          Client Feedback
+        </p>
+        <div class="mt-20 grid gap-10 lg:grid-cols-3">
+          <div class="bg-white p-10 rounded-xl">
+            <p class="lg:text-3xl text-xl">Very Solid!!</p>
+            <div class="rating rating-sm mt-5">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <p class="mt-5 text-lg lg:text-2xl leading-loose">
+              They not only understand what I say but read between the lines and
+              also give me ideas of my own.
+            </p>
+            <p class="lg:text-xl font-medium mt-16">
+              Rashed Kabir,
+              <span class="text-gray-400 font-normal">California</span>
+            </p>
+          </div>
+
+          <div class="bg-white p-10 rounded-xl">
+            <p class="lg:text-3xl text-xl">Very Solid!!</p>
+            <div class="rating rating-sm mt-5">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <p class="mt-5 text-lg lg:text-2xl leading-loose">
+              They not only understand what I say but read between the lines and
+              also give me ideas of my own.
+            </p>
+            <p class="lg:text-xl font-medium mt-16">
+              Rashed Kabir,
+              <span class="text-gray-400 font-normal">California</span>
+            </p>
+          </div>
+
+          <div class="bg-white p-10 rounded-xl">
+            <p class="lg:text-3xl text-xl">Very Solid!!</p>
+            <div class="rating rating-sm mt-5">
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+                checked
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+              <input
+                type="radio"
+                name="rating-2"
+                class="mask mask-star-2 bg-orange-400"
+              />
+            </div>
+            <p class="mt-5 text-lg lg:text-2xl leading-loose">
+              They not only understand what I say but read between the lines and
+              also give me ideas of my own.
+            </p>
+            <p class="lg:text-xl font-medium mt-16">
+              Rashed Kabir,
+              <span class="text-gray-400 font-normal">California</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile app section -->
+    <div class="grid lg:grid-cols-2 gap-x-16 gap-y-10 container mt-20">
+      <div class="">
+        <p class="uppercase text-gray-400 tracking-wider lg:text-lg">
+          Mobile app
+        </p>
+        <p class="lg:text-5xl text-3xl font-medium">
+          Download our Earnways Application.
+        </p>
+        <p class="text-gray-600 mt-10 text-lg lg:text-xl">
+          Get control of all your insurance needs anywhere, anytime
+        </p>
+        <ul class="mt-16 text-xl lg:text-2xl flex flex-col gap-y-5">
+          <li class="flex items-center gap-x-3">
+            <i class="bi bi-check text-primary"></i>
+            <p>Compare different insurance Item</p>
+          </li>
+          <li class="flex items-center gap-x-3">
+            <i class="bi bi-check text-primary"></i>
+            <p>Buy, store and share all your policies online</p>
+          </li>
+          <li class="flex items-center gap-x-3">
+            <i class="bi bi-check text-primary"></i>
+            <p>Email & Live chat.</p>
+          </li>
+        </ul>
+        <div class="flex gap-x-5 mt-20">
+          <button class="hover:translate-y-[-10%] duration-150">
+            <img src="./img/play-store.png" alt="" />
+          </button>
+          <button class="hover:translate-y-[-10%] duration-150">
+            <img src="./img/app-store-btn.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <div class="relative flex px-28">
+        <div class="relative">
+          <img src="./img/app-img.png" class="z-[10]" alt="" />
+          <img
+            src="./img/img_57.png"
+            class="absolute top-[50%] translate-y-[-50%] right-[-50%] z-[-1]"
+            alt=""
+          />
+        </div>
+        <img
+          src="./img/twisted_line.png"
+          class="h-fit absolute hidden lg:block top-[50%] translate-y-[50%] left-[-15%]"
+          alt=""
+        />
+        <img
+          src="./img/three_line.png"
+          class="absolute top-0 right-[7%] hidden lg:block icon-img-animation"
+          alt=""
+        />
+      </div>
+    </div>
+
+    <!-- form section -->
+    <div class="bg-[#f6f9fb] py-16 mt-28">
+      <div
+        class="container bg-white grid lg:grid-cols-2 gap-y-10 py-16 lg:py-0"
+      >
+        <div
+          class="flex flex-col gap-y-5 lg:border-r lg:border-gray-200 lg:p-16"
+        >
+          <input
+            type="text"
+            class="input input-bordered input-lg border-gray-200"
+            placeholder="Your name*"
+          />
+          <input
+            type="email"
+            class="input input-bordered input-lg border-gray-200"
+            placeholder="Email*"
+          />
+          <textarea
+            type="text"
+            class="textarea textarea-bordered h-40 textarea-lg border-gray-200"
+            placeholder="Your message*"
+          ></textarea>
+          <button class="btn btn-primary text-white uppercase tracking-widest">
+            Send message
+          </button>
+          <p class="text-lg text-center text-gray-400">
+            Been here before?
+            <span
+              class="text-black font-medium duration-150 cursor-pointer hover:text-primary"
+              >Check your query</span
+            >
+          </p>
+        </div>
+        <div class="lg:p-16">
+          <i class="bi bi-headset text-primary text-5xl"></i>
+          <p class="lg:text-6xl text-4xl font-medium leading-tight">
+            Let's talk with experience advisors.
+          </p>
+          <p class="mt-10 text-xl">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis,
+            nihil.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer section -->
+    <div class="bg-[#1e1e1e] relative">
+      <img
+        src="./img/footer-bg-1.png"
+        class="absolute w-[30%] left-0 bottom-0"
+        alt=""
+      />
+      <img
+        src="./img/footer-bg-2.png"
+        class="absolute w-[30%] right-0 bottom-0"
+        alt=""
+      />
+
+      <div class="container grid lg:grid-cols-4 py-24">
+        <div class="">
+          <img src="./img/logo.png" alt="" />
+          <p class="text-lg text-gray-300 mt-5">Best Insurance Company.</p>
+          <p class="mt-10 text-gray-400">&#169; 2021 - 2023 Earnways inc.</p>
+        </div>
+        <div class="">
+          <p class="text-white text-2xl font-medium">Links</p>
+          <ul class="flex flex-col mt-10 gap-y-5 text-lg text-gray-300">
+            <li><a href="" class="hover:text-primary duration-300">Home</a></li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">Pricing</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">About Us</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">Careers</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">Featured</a>
+            </li>
+            <li><a href="" class="hover:text-primary duration-300">Blog</a></li>
+          </ul>
+        </div>
+        <div class="">
+          <p class="text-white text-2xl font-medium">Services</p>
+          <ul class="flex flex-col mt-10 gap-y-5 text-lg text-gray-300">
+            <li>
+              <a href="" class="hover:text-primary duration-300"
+                >Health Insurance Plans</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300"
+                >Car Insurance</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">Investment</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300"
+                >Medician Policy</a
+              >
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300">Others</a>
+            </li>
+            <li>
+              <a href="" class="hover:text-primary duration-300"
+                >Health Insurance</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <div class="">
+          <p class="text-white text-2xl font-medium">Address</p>
+          <p class="w-[70%] text-gray-300 mt-5">
+            2190 Mirpur terrace, Lake view house state, 10 no road.
+          </p>
+
+          <div class="flex mt-10 gap-x-5">
+            <button
+              class="bg-[rgba(255,255,255,0.1)] rounded-full w-14 h-14 duration-300 hover:bg-primary text-2xl text-white"
+            >
+              <i class="bi bi-facebook"></i>
+            </button>
+            <button
+              class="bg-[rgba(255,255,255,0.1)] rounded-full w-14 h-14 duration-300 hover:bg-primary text-2xl text-white"
+            >
+              <i class="bi bi-twitter"></i>
+            </button>
+            <button
+              class="bg-[rgba(255,255,255,0.1)] rounded-full w-14 h-14 duration-300 hover:bg-primary text-2xl text-white"
+            >
+              <i class="bi bi-linkedin"></i>
+            </button>
           </div>
         </div>
       </div>

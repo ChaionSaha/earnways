@@ -13,5 +13,5 @@
 }
 
 .container {
-  @apply mx-auto;
+  @apply mx-auto px-5 lg:px-0;
 }
