@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container mx-auto">
+    <div class="flex items-center text-2xl mt-5 text-primary">
+      <button class="btn btn-ghost text-2xl">
+        <img src="./img/chevron-left.png" alt="" />
+      </button>
+      <p class="font-bold">Withdraw Money</p>
+    </div>
+
+    <div class="flex mt-10 flex-col items-center text-center">
+      <p class="text-gray-600 text-sm">Your account balance is</p>
+      <p class="text-3xl font-bold text-primary">348.00 BDT</p>
+    </div>
+
+    <p class="font-medium mt-10">Withdrawal Method</p>
+    <div class="mt-5 grid grid-cols-4 gap-x-3">
+      <div class="shadow-lg rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="bkash"
+          checked
+        />
+        <label for="bkash" class="flex justify-center items-center">
+          <img src="./img/bkash-2.png" class="w-fit h-fit" alt="" />
+        </label>
+      </div>
+      <div class="rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="nagad"
+        />
+        <label for="nagad" class="flex justify-center items-center">
+          <img src="./img/nagad-2.png" class="w-fit h-fit" alt="" />
+        </label>
+      </div>
+      <div class="rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="google"
+        />
+        <label for="google" class="flex justify-center items-center">
+          <img src="./img/rocket.png" class="w-full h-fit" alt="" />
+        </label>
+      </div>
+      <div class="rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="paytm"
+        />
+        <label for="paytm" class="flex justify-center items-center">
+          <img src="./img/paytm.png" class="w-fit h-fit" alt="" />
+        </label>
+      </div>
+
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="paypal"
+        />
+        <label for="paypal" class="flex justify-center items-center">
+          <img src="./img/paypal.png" class="w-fit h-fit" alt="" />
+        </label>
+      </div>
+    </div>
+
+    <div class="mt-5 flex flex-col gap-y-2">
+      <label for="email">Enter Account Number</label>
+      <input
+        id="email"
+        type="text"
+        class="input input-primary bg-primary-light border-transparent w-full placeholder:text-primary-placeholder"
+      />
+    </div>
+    <div class="mt-5 flex flex-col gap-y-2">
+      <label for="email">Enter Amount</label>
+      <input
+        id="email"
+        type="text"
+        class="input input-primary bg-primary-light border-transparent w-full placeholder:text-primary-placeholder"
+      />
+    </div>
+
+    <div class="">
+      <button class="btn btn-primary w-full text-white mt-10">Proceed</button>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>
