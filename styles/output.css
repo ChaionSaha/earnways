@@ -9299,6 +9299,10 @@ html:has(.drawer-open.drawer-open){
   row-gap: 2.5rem;
 }
 
+.gap-y-2{
+  row-gap: 0.5rem;
+}
+
 .gap-y-3{
   row-gap: 0.75rem;
 }
@@ -10349,6 +10353,11 @@ html:has(.drawer-open.drawer-open){
 .text-gray-400{
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+
+.text-gray-500{
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-600{

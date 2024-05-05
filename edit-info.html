@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container mx-auto">
+    <div class="flex items-center text-2xl mt-5 text-primary">
+      <button class="btn btn-ghost text-2xl">
+        <img src="./img/chevron-left.png" alt="" />
+      </button>
+      <p class="font-bold">Edit Info</p>
+    </div>
+    <div class="mt-5 flex justify-between">
+      <p>Display Photo</p>
+      <img src="./img/profile-img-placeholder.png" alt="" />
+    </div>
+    <div class="mt-5 flex flex-col gap-y-2">
+      <label for="name">Name</label>
+      <input
+        id="name"
+        type="text"
+        placeholder="Name"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+    </div>
+    <div class="mt-5 flex flex-col gap-y-2">
+      <label for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="email@gmail.com"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+    </div>
+    <div class="mt-5 flex flex-col gap-y-2">
+      <label for="phone">Mobile No.</label>
+      <input
+        id="phone"
+        type="tel"
+        placeholder="01XXXXXXXXX"
+        class="input input-primary bg-primary-light w-full placeholder:text-primary-placeholder"
+      />
+    </div>
+    <div class="">
+      <button class="btn btn-primary w-full text-white mt-10">Update</button>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>
