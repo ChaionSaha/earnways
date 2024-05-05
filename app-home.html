@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container">
+    <div class="flex items-center justify-between mt-5">
+      <button>
+        <img src="./img/hamburger-menu.png" alt="" />
+      </button>
+      <img class="h-14 w-fit" src="./img/logo.png" alt="" />
+      <button>
+        <img src="./img/profile-img-placeholder.png" alt="" />
+      </button>
+    </div>
+    <div
+      class="rounded grid grid-cols-2 p-5 mt-10"
+      style="
+        background: linear-gradient(90deg, #334ea2 -14.1%, #5d33a2 106.17%);
+      "
+    >
+      <img src="./img/g8.png" alt="" />
+      <div class="flex flex-col justify-center">
+        <p class="uppercase text-white font-semibold text-center">add header</p>
+        <input type="text" class="input input-sm" />
+      </div>
+    </div>
+
+    <div
+      class="p-5 mt-5 text-white"
+      style="
+        background: linear-gradient(90deg, #889bdd -14.1%, #50e7b7 106.17%);
+      "
+    >
+      <div class="flex justify-between">
+        <p class="font-medium">Level 5</p>
+        <p>Commissions: <span class="font-medium">2356 BDT</span></p>
+      </div>
+      <progress
+        class="progress progress-warning w-full rounded-none mt-5"
+        value="100"
+        max="100"
+      ></progress>
+      <p class="text-center mt-5">Total Refer: 05</p>
+    </div>
+
+    <div class="grid grid-cols-3 gap-x-5 mt-10">
+      <button class="flex flex-col items-center gap-y-3">
+        <img src="./img/youtube-icon.png" alt="" />
+        <p class="font-semibold">Watch Video</p>
+      </button>
+      <button class="flex flex-col items-center gap-y-3">
+        <img src="./img/sell-product-icon.png" alt="" />
+        <p class="font-semibold">Sell Products</p>
+      </button>
+      <button class="flex flex-col items-center gap-y-3">
+        <img src="./img/play-store-2.png" alt="" />
+        <p class="font-semibold">Download App</p>
+      </button>
+    </div>
+
+    <div class="bg-[#F6DF67] flex gap-x-10 px-10 py-5 mt-10 rounded">
+      <img src="./img/leaderboard-icon.png" alt="" />
+      <div class="flex flex-col">
+        <p>Today's</p>
+        <p class="font-bold text-xl">Leaderboard</p>
+      </div>
+    </div>
+
+    <div class="flex items-center gap-x-3 mt-10">
+      <p>Refer</p>
+      <input
+        type="text"
+        class="input border-gray-400 input-bordered flex-grow"
+        placeholder="kjash"
+      />
+      <button><i class="bi bi-copy"></i></button>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>

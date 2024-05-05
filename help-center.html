@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Earnways</title>
+  </head>
+  <body class="container mx-auto">
+    <div class="flex items-center mt-5 text-2xl text-primary">
+      <button class="btn btn-ghost text-2xl">
+        <img src="./img/chevron-left.png" alt="" />
+      </button>
+      <p class="font-bold">Help Center</p>
+    </div>
+
+    <div class="mt-10 text-lg font-medium flex flex-col gap-y-5">
+      <div class="shadow-lg p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="bkash"
+          checked
+        />
+        <label for="bkash" class="flex items-center gap-x-5">
+          <img src="./img/union-1.png" class="w-fit h-fit" alt="" />
+          <p class="">Customer Service</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="nagad"
+        />
+        <label for="nagad" class="flex items-center gap-x-5">
+          <i class="bi bi-dribbble text-2xl"></i>
+          <p class="">Website</p>
+        </label>
+      </div>
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="paytm"
+        />
+        <label for="paytm" class="flex items-center gap-x-5">
+          <i class="bi bi-facebook text-2xl"></i>
+          <p class="">Facebook</p>
+        </label>
+      </div>
+
+      <div class="p-5 rounded-xl">
+        <input
+          type="radio"
+          name="payment"
+          class="hidden payment-method"
+          id="insta"
+        />
+        <label for="insta" class="flex items-center gap-x-5">
+          <i class="bi bi-instagram text-2xl"></i>
+          <p class="">Instagram</p>
+        </label>
+      </div>
+    </div>
+  </body>
+
+  <script src="./js/index.js"></script>
+</html>
